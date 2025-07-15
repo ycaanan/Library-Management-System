@@ -15,11 +15,11 @@ import lombok.Setter;
 public class Member {
      @Id
      @GeneratedValue(strategy = GenerationType.IDENTITY)
-     private long id;
 
+     private long member_id;
      private String membername;
-    private  String membersurname;
-    private String memberemail;
+     private  String membersurname;
+     private String memberemail;
 
 
 
