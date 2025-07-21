@@ -1,30 +1,54 @@
 package com.example.library_management_system.service.impl;
 
 import com.example.library_management_system.model.Book;
+import com.example.library_management_system.repository.BookRepository;
 import com.example.library_management_system.service.BookService;
+
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class BookServiceimpl implements BookService {
 
-    // Basit, geçici kitap listesi
-    private final List<Book> books = new ArrayList<>();
+    private BookRepository bookRepository;
 
+
+
+    // Create işlemi
+    @Override
+    public Book saveBook(Book book) {
+        return bookRepository.save(book);
+    }
+
+    // Get işlemi
     @Override
     public List<Book> getAllBooks() {
-        return books;
+        return bookRepository.findAll();
     }
 
+    // İD'ye göre get işlemi
     @Override
     public Book getBookById(Long id) {
-        return books.stream()
-                .filter(book -> book.getBook_id().equals(id))
-                .findFirst()
-                .orElse(null);
+        return bookRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Book not found with id: " + id));
     }
 
+    // Var olan kitabı güncelleme
+    @Override
+    public Book updateBook(Long id, Book book){
+        Book existingBook = bookRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Book not found with id: " + id));
+
+        existingBook.setBook_name(book.getBook_name());
+        existingBook.setBook_author(book.getBook_author());
+
+        return bookRepository.save(existingBook);
     }
 
+    // Kitabı veritabanından siliyoruz
+    @Override
+    public void deleteBook(Long id) {
+        bookRepository.deleteById(id);
+    }
+}
