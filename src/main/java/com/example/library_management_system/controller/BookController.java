@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/books")
+@RequestMapping("/book")
 public class BookController {
 
     private final BookService bookService;
@@ -18,8 +18,14 @@ public class BookController {
 
     // Tüm kitapları listeleme endpoint'i
 
-    @GetMapping
+    @GetMapping("/GetAll")
     public List<Book> getAllBooks() {
         return bookService.getAllBooks();
     }
-}
+
+    @GetMapping("/Create")
+        @PostMapping
+        public Book createBook (@RequestBody Book book) {
+            return bookService.saveBook(book);
+        }
+        }
