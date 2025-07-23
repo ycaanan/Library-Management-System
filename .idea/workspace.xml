@@ -4,23 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5479ecd-de23-42a4-9801-66a780cf59f4" name="Changes" comment="config paketi oluşturup kitap  db ye kitap ekledim, service katmanı kodladım.">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1ba45cd1-830d-490c-ab46-504f2aefdb7e.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1ba45cd1-830d-490c-ab46-504f2aefdb7e/storage_v2/_src_/database/library.uyToCQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1ba45cd1-830d-490c-ab46-504f2aefdb7e/storage_v2/_src_/database/library.uyToCQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1ba45cd1-830d-490c-ab46-504f2aefdb7e/storage_v2/_src_/database/library.uyToCQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1ba45cd1-830d-490c-ab46-504f2aefdb7e/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1ba45cd1-830d-490c-ab46-504f2aefdb7e/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1ba45cd1-830d-490c-ab46-504f2aefdb7e/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1ba45cd1-830d-490c-ab46-504f2aefdb7e/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/config/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/config/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/repository/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/impl/BookServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/impl/BookServiceimpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/controller/BookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/service/impl/BookServiceImpl.class" afterDir="false" />
+    <list default="true" id="e5479ecd-de23-42a4-9801-66a780cf59f4" name="Changes" comment="creatre işlemini tamamladım">
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/config/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/config/DataLoader.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +152,7 @@
       <workItem from="1752754748523" duration="635000" />
       <workItem from="1752769688240" duration="8309000" />
       <workItem from="1753092382536" duration="14237000" />
-      <workItem from="1753265245306" duration="3242000" />
+      <workItem from="1753265245306" duration="3489000" />
     </task>
     <task id="LOCAL-00001" summary="güncellendi">
       <option name="closed" value="true" />
@@ -225,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753102473087</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="creatre işlemini tamamladım">
+      <option name="closed" value="true" />
+      <created>1753268629899</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1753268629899</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +244,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="güncellendi" />
     <MESSAGE value="config paketi oluşturup kitap  db ye kitap ekledim, service katmanı kodladım." />
-    <option name="LAST_COMMIT_MESSAGE" value="config paketi oluşturup kitap  db ye kitap ekledim, service katmanı kodladım." />
+    <MESSAGE value="creatre işlemini tamamladım" />
+    <option name="LAST_COMMIT_MESSAGE" value="creatre işlemini tamamladım" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
