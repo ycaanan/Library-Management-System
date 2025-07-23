@@ -4,16 +4,20 @@ import com.example.library_management_system.model.Book;
 import com.example.library_management_system.repository.BookRepository;
 import com.example.library_management_system.service.BookService;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class BookServiceimpl implements BookService {
+public class BookServiceImpl implements BookService {
+    private final  BookRepository bookRepository;
 
-    private BookRepository bookRepository;
-
-
+    @Autowired
+    //constructer
+    public BookServiceImpl(BookRepository bookRepository) {
+        this.bookRepository = bookRepository;
+    }
 
     // Create işlemi
     @Override

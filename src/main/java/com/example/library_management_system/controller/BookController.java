@@ -7,25 +7,42 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+
+//  sınıf üzerinde kullanılırsa "..." bu sınıfın tüm  URL yolunu temsil eder.
 @RequestMapping("/book")
 public class BookController {
 
     private final BookService bookService;
 
+    //contructer
     public BookController(BookService bookService) {
         this.bookService = bookService;
     }
 
     // Tüm kitapları listeleme endpoint'i
 
-    @GetMapping("/GetAll")
+    //sadece GET tipi HTTP isteleri bu metoda gelir
+    @GetMapping("/all")
     public List<Book> getAllBooks() {
         return bookService.getAllBooks();
     }
 
-    @GetMapping("/Create")
-        @PostMapping
-        public Book createBook (@RequestBody Book book) {
-            return bookService.saveBook(book);
-        }
-        }
+    @PostMapping("/create")
+
+    public Book createBook (@RequestBody Book book) {
+        return bookService.saveBook(book);
+    }
+
+
+    @GetMapping("/test")
+    public String test() {
+        return "Controller çalışıyor!";
+    }
+
+
+
+
+
+
+
+}
