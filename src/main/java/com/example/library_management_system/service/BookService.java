@@ -19,4 +19,9 @@ public interface BookService {
 
     // Var olan kitabı silme
     void deleteBook(Long id);
+
+    // kitap aratma isme göre
+    List<Book> searchBooksByName(String name);
+
+
 }
