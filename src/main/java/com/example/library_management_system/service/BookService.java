@@ -18,5 +18,10 @@ public interface BookService {
     Book updateBook(Long id, Book book);
 
     // Var olan kitabı silme
-    void deleteBook(Long id);
+    Book deleteBook(Long id);
+
+    // kitap aratma isme göre
+    List<Book> searchBooksByName(String name);
+
+
 }

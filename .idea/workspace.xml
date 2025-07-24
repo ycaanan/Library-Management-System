@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5479ecd-de23-42a4-9801-66a780cf59f4" name="Changes" comment="creatre işlemini tamamladım">
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/config/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/config/DataLoader.class" afterDir="false" />
+    <list default="true" id="e5479ecd-de23-42a4-9801-66a780cf59f4" name="Changes" comment="isme göre kitap aratma ekledim, kitap adlandırmasında hata vardı onu güncelledim">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/dto/BookListResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/dto/BookResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/impl/BookServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/impl/BookServiceimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/controller/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/model/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/service/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/service/impl/BookServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +64,7 @@
     <hideBySeverity>
       <option value="300" />
     </hideBySeverity>
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -80,7 +90,6 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.LibraryManagementSystemApplication.executor": "Debug",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/caana/OneDrive/Masaüstü/Library-Management-System",
@@ -102,6 +111,10 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\caana\OneDrive\Masaüstü\Library-Management-System\src\main\java\com\example\library_management_system" />
+      <recent name="C:\Users\caana\OneDrive\Masaüstü\Library-Management-System\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.library_management_system.service" />
     </key>
@@ -152,7 +165,9 @@
       <workItem from="1752754748523" duration="635000" />
       <workItem from="1752769688240" duration="8309000" />
       <workItem from="1753092382536" duration="14237000" />
-      <workItem from="1753265245306" duration="3489000" />
+      <workItem from="1753265245306" duration="9555000" />
+      <workItem from="1753350587235" duration="11914000" />
+      <workItem from="1753439218765" duration="8960000" />
     </task>
     <task id="LOCAL-00001" summary="güncellendi">
       <option name="closed" value="true" />
@@ -218,7 +233,23 @@
       <option name="project" value="LOCAL" />
       <updated>1753268629899</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="creatre işlemini tamamladım">
+      <option name="closed" value="true" />
+      <created>1753269023556</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1753269023556</updated>
+    </task>
+    <task id="LOCAL-00010" summary="isme göre kitap aratma ekledim, kitap adlandırmasında hata vardı onu güncelledim">
+      <option name="closed" value="true" />
+      <created>1753361153844</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1753361153844</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +276,8 @@
     <MESSAGE value="güncellendi" />
     <MESSAGE value="config paketi oluşturup kitap  db ye kitap ekledim, service katmanı kodladım." />
     <MESSAGE value="creatre işlemini tamamladım" />
-    <option name="LAST_COMMIT_MESSAGE" value="creatre işlemini tamamladım" />
+    <MESSAGE value="isme göre kitap aratma ekledim, kitap adlandırmasında hata vardı onu güncelledim" />
+    <option name="LAST_COMMIT_MESSAGE" value="isme göre kitap aratma ekledim, kitap adlandırmasında hata vardı onu güncelledim" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
