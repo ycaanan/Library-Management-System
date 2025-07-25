@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5479ecd-de23-42a4-9801-66a780cf59f4" name="Changes" comment="isme göre kitap aratma ekledim, kitap adlandırmasında hata vardı onu güncelledim" />
+    <list default="true" id="e5479ecd-de23-42a4-9801-66a780cf59f4" name="Changes" comment="isme göre kitap aratma ekledim, kitap adlandırmasında hata vardı onu güncelledim">
+      <change beforePath="$PROJECT_DIR$/.idea/Library-Management-System.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ce6cfea4-fe0a-45f1-8788-cb355a4260f9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ce6cfea4-fe0a-45f1-8788-cb355a4260f9/storage_v2/_src_/database/library_db.gs7L3Q.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ce6cfea4-fe0a-45f1-8788-cb355a4260f9/storage_v2/_src_/database/library_db.gs7L3Q/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ce6cfea4-fe0a-45f1-8788-cb355a4260f9/storage_v2/_src_/database/library_db.gs7L3Q/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ce6cfea4-fe0a-45f1-8788-cb355a4260f9/storage_v2/_src_/database/library_db.gs7L3Q/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/impl/BookServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/.idea/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,6 +175,8 @@
       <workItem from="1753265245306" duration="9555000" />
       <workItem from="1753350587235" duration="11914000" />
       <workItem from="1753439218765" duration="9324000" />
+      <workItem from="1753458593619" duration="11000" />
+      <workItem from="1753459385315" duration="1267000" />
     </task>
     <task id="LOCAL-00001" summary="güncellendi">
       <option name="closed" value="true" />
