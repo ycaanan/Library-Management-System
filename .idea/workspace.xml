@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5479ecd-de23-42a4-9801-66a780cf59f4" name="Changes" comment="isme göre kitap aratma ekledim, kitap adlandırmasında hata vardı onu güncelledim">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/dto/BookListResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/dto/BookResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/impl/BookServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/impl/BookServiceimpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/controller/BookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/model/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/service/BookService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/service/impl/BookServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Library-Management-System.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/untitled.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +28,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Canan Yıldız &lt;ycaaanan@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -90,6 +91,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.LibraryManagementSystemApplication.executor": "Debug",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/caana/OneDrive/Masaüstü/Library-Management-System",
@@ -167,7 +169,7 @@
       <workItem from="1753092382536" duration="14237000" />
       <workItem from="1753265245306" duration="9555000" />
       <workItem from="1753350587235" duration="11914000" />
-      <workItem from="1753439218765" duration="8960000" />
+      <workItem from="1753439218765" duration="9324000" />
     </task>
     <task id="LOCAL-00001" summary="güncellendi">
       <option name="closed" value="true" />
@@ -249,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753361153844</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="isme göre kitap aratma ekledim, kitap adlandırmasında hata vardı onu güncelledim">
+      <option name="closed" value="true" />
+      <created>1753453623636</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1753453623636</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +286,7 @@
     <MESSAGE value="güncellendi" />
     <MESSAGE value="config paketi oluşturup kitap  db ye kitap ekledim, service katmanı kodladım." />
     <MESSAGE value="creatre işlemini tamamladım" />
+    <MESSAGE value="message ve status eklendi" />
     <MESSAGE value="isme göre kitap aratma ekledim, kitap adlandırmasında hata vardı onu güncelledim" />
     <option name="LAST_COMMIT_MESSAGE" value="isme göre kitap aratma ekledim, kitap adlandırmasında hata vardı onu güncelledim" />
   </component>

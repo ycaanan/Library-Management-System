@@ -5,6 +5,7 @@ import com.example.library_management_system.service.BookService;
 import com.example.library_management_system.dto.BookResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import com.example.library_management_system.dto.BookListResponse;
 
 import java.util.List;
 
