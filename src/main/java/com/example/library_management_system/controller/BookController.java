@@ -3,9 +3,10 @@ package com.example.library_management_system.controller;
 import com.example.library_management_system.model.Book;
 import com.example.library_management_system.service.BookService;
 import com.example.library_management_system.dto.BookResponse;
+import com.example.library_management_system.dto.BookListResponse;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import com.example.library_management_system.dto.BookListResponse;
 
 import java.util.List;
 
@@ -35,7 +36,7 @@ public class BookController {
             return ResponseEntity.status(404).body(response);
         }
     }
-// 201 created yeni kaynak oluşturuldu
+
     @PostMapping("/create")
     public ResponseEntity<BookResponse> createBook(@RequestBody Book book) {
         Book savedBook = bookService.saveBook(book);
@@ -58,17 +59,14 @@ public class BookController {
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<BookResponse> deleteBook(@PathVariable Long id) {
         try {
-             Book deleteBook = bookService.deleteBook(id);
-            BookResponse response= new BookResponse(deleteBook,"Kitap BAşarıyla silindi",200);
+            Book deletedBook = bookService.deleteBook(id);
+            BookResponse response = new BookResponse(deletedBook, "Kitap başarıyla silindi", 200);
             return ResponseEntity.ok(response);
-        }//hata olursa çalışır
-        catch (RuntimeException e){
-            BookResponse response=new BookResponse( null," Kitap bulunamadı ", 404);
-       return ResponseEntity.status(404).body(response);
+        } catch (RuntimeException e) {
+            BookResponse response = new BookResponse(null, "Kitap bulunamadı", 404);
+            return ResponseEntity.status(404).body(response);
         }
-
-        }
-
+    }
 
     @GetMapping("/search")
     public ResponseEntity<BookListResponse> searchBooks(@RequestParam String name) {
@@ -81,7 +79,6 @@ public class BookController {
             return ResponseEntity.status(404).body(response);
         }
     }
-
 
     // kitap ödünç alma verme kısmını ileride ekleyebilirsin
 }

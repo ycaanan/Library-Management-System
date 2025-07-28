@@ -11,8 +11,8 @@ public class DataLoader {
 
     @Bean
     CommandLineRunner initDatabase(BookRepository bookRepository) {
-        return Stringargs -> {//lambda
-            if (bookRepository.count() == 0) { // veri zaten varsa tekrar ekleme
+        return args -> {
+            if (bookRepository.count() == 0) { // Eğer veritabanı boşsa kitapları ekle
                 bookRepository.save(new Book("Sefiller", "Victor Hugo", "Roman"));
                 bookRepository.save(new Book("Suç ve Ceza", "Dostoyevski", "Roman"));
 

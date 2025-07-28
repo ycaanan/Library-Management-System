@@ -14,31 +14,26 @@ public class BookServiceImpl implements BookService {
     private final BookRepository bookRepository;
 
     @Autowired
-    //constructer
     public BookServiceImpl(BookRepository bookRepository) {
         this.bookRepository = bookRepository;
     }
 
-    // Create işlemi
     @Override
     public Book saveBook(Book book) {
         return bookRepository.save(book);
     }
 
-    // Get işlemi
     @Override
     public List<Book> getAllBooks() {
         return bookRepository.findAll();
     }
 
-    // İD'ye göre get işlemi
     @Override
     public Book getBookById(Long id) {
         return bookRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Kitap bulunamadı " + id));
     }
 
-    // Var olan kitabı güncelleme
     @Override
     public Book updateBook(Long id, @NotNull Book book) {
         Book existingBook = bookRepository.findById(id)
@@ -50,18 +45,16 @@ public class BookServiceImpl implements BookService {
         return bookRepository.save(existingBook);
     }
 
-    // Kitabı veritabanından siliyoruz
     @Override
     public Book deleteBook(Long id) {
         Book book = bookRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Kitap bulunamadı: " + id));
         bookRepository.delete(book);
-        return book;  // Silinen kitabı döndür
+        return book;
     }
 
-    // isme göre kitap aratma
-     @Override
-    public List<Book>searchBooksByName(String name){
+    @Override
+    public List<Book> searchBooksByName(String name) {
         return bookRepository.findByBookNameContainingIgnoreCase(name);
-     }
+    }
 }

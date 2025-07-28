@@ -23,5 +23,4 @@ public interface BookService {
     // kitap aratma isme göre
     List<Book> searchBooksByName(String name);
 
-
 }

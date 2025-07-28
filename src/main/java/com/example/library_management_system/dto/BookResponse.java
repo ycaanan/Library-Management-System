@@ -1,6 +1,6 @@
 package com.example.library_management_system.dto;
 
-import com.example.library_management_system.model.Book;
+import com.example.library_management_system.model.Book;  // <- bunu ekle
 import lombok.*;
 
 @AllArgsConstructor
