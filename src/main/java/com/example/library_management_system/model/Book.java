@@ -1,15 +1,7 @@
 package com.example.library_management_system.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-
-import lombok.Getter;
-import lombok.Setter;
-import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
-
+import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
 @Getter
@@ -26,10 +18,13 @@ public class Book {
     private String bookAuthor;
     private String genre;
 
+    private Boolean available = true; // Varsayılan true olarak ayarlandı
+
     // ID'siz constructor
     public Book(String bookName, String bookAuthor, String genre) {
         this.bookName = bookName;
         this.bookAuthor = bookAuthor;
         this.genre = genre;
+        this.available = true; // Constructor'da da ayarla
     }
 }

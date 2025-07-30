@@ -63,8 +63,8 @@ public class BookController {
             BookResponse response = new BookResponse(deletedBook, "Kitap başarıyla silindi", 200);
             return ResponseEntity.ok(response);
         } catch (RuntimeException e) {
-            BookResponse response = new BookResponse(null, "Kitap bulunamadı", 404);
-            return ResponseEntity.status(404).body(response);
+            BookResponse response = new BookResponse(null, e.getMessage(), 400);
+            return ResponseEntity.status(400).body(response);
         }
     }
 
@@ -80,5 +80,5 @@ public class BookController {
         }
     }
 
-    // kitap ödünç alma verme kısmını ileride ekleyebilirsin
+    // Kitap ödünç alma/verme gibi işlemler servis katmanında yapılmalı
 }

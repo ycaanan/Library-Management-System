@@ -1,34 +1,61 @@
 package com.example.library_management_system.controller;
 
-import com.example.library_management_system.model.Loan;
 import com.example.library_management_system.service.LoanService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.library_management_system.dto.LoanResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/loans")
 public class LoanController {
 
-    @Autowired
-    private LoanService loanService;
+    private final LoanService loanService;
 
-    @PostMapping("/create")
-    public ResponseEntity<Loan> loanBook(@RequestParam Long memberId, @RequestParam Long bookId) {
-        Loan loan = loanService.loanBook(memberId, bookId);
-        return ResponseEntity.ok(loan);
+    public LoanController(LoanService loanService) {
+        this.loanService = loanService;
     }
 
-    @PostMapping("/return/{id}")
-    public ResponseEntity<Loan> returnBook(@PathVariable Long id) {
-        Loan loan = loanService.returnBook(id);
-        return ResponseEntity.ok(loan);
+    // Kitap ödünç alma
+    @PostMapping("/takebook")
+    public ResponseEntity<LoanResponse> takeBook(@RequestBody Map<String, String> request) {
+        Long memberId = Long.valueOf(request.get("memberId"));
+        Long bookId = Long.valueOf(request.get("bookId"));
+
+        LoanResponse response = loanService.takeBook(memberId, bookId);
+        return ResponseEntity.ok(response);
     }
 
-    @GetMapping("/all")
-    public ResponseEntity<List<Loan>> getAllLoans() {
-        return ResponseEntity.ok(loanService.getAllLoans());
+
+    // Kitap iade etme
+    @PostMapping("/returnBook")
+    public ResponseEntity<LoanResponse> returnBook(@RequestBody Map<String, String> request) {
+        Long memberId = Long.valueOf(request.get("memberId"));
+        Long bookId = Long.valueOf(request.get("bookId"));
+
+        LoanResponse response = loanService.returnBook(memberId, bookId);
+        return ResponseEntity.ok(response);
+    }
+
+    // Tüm aktif (iade edilmemiş) ödünçleri getir
+    @GetMapping("/active")
+    public ResponseEntity<List<LoanResponse>> getActiveLoans() {
+        return ResponseEntity.ok(loanService.getActiveLoans());
+    }
+
+    // Belirli bir üyeye ait aktif ödünçler
+    @GetMapping("/activeByMember")
+    public ResponseEntity<List<LoanResponse>> getActiveLoansByMember(@RequestParam Long memberId) {
+        return ResponseEntity.ok(loanService.getActiveLoansByMember(memberId));
+    }
+
+    // Tüm ödünç kayıtlarını sil (uyarı: dikkatli kullan!)
+    @DeleteMapping("/deleteAll")
+    public ResponseEntity<String> deleteAllLoans() {
+        loanService.deleteAllLoans();
+        return ResponseEntity.ok("Tüm ödünç kayıtları silindi.");
     }
 }

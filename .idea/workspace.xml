@@ -4,7 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5479ecd-de23-42a4-9801-66a780cf59f4" name="Changes" comment="Kitap ödünç alma işlemleri için Loan ekledim.member için CRUD işlemlerini tamamladım" />
+    <list default="true" id="e5479ecd-de23-42a4-9801-66a780cf59f4" name="Changes" comment="Kitap ödünç alma işlemleri için Loan ekledim.member için CRUD işlemlerini tamamladım">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/dto/LoanRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/dto/LoanResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/config/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/config/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/controller/LoanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/controller/LoanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/model/Loan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/model/Loan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/model/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/model/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/repository/LoanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/repository/LoanRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/repository/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/LoanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/LoanService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/impl/LoanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/impl/LoanServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/config/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/config/DataLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/controller/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/controller/LoanController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/controller/LoanController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/controller/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/controller/MemberController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/model/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/model/Loan$LoanBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/model/Loan$LoanBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/model/Loan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/model/Loan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/model/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/model/Member.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/repository/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/repository/BookRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/repository/LoanRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/repository/LoanRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/repository/MemberRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/repository/MemberRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/service/LoanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/service/LoanService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/service/impl/BookServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/service/impl/LoanServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/service/impl/LoanServiceImpl.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +85,7 @@
     </layout>
   </component>
   <component name="ProblemsViewState">
+    <option name="autoscrollToSource" value="true" />
     <hideBySeverity>
       <option value="300" />
     </hideBySeverity>
@@ -170,7 +202,10 @@
       <workItem from="1753656647802" duration="696000" />
       <workItem from="1753657368236" duration="2319000" />
       <workItem from="1753697309580" duration="1124000" />
-      <workItem from="1753700958375" duration="1702000" />
+      <workItem from="1753700958375" duration="9165000" />
+      <workItem from="1753772950697" duration="4423000" />
+      <workItem from="1753777656952" duration="3923000" />
+      <workItem from="1753781703190" duration="10643000" />
     </task>
     <task id="LOCAL-00001" summary="güncellendi">
       <option name="closed" value="true" />
@@ -276,7 +311,23 @@
       <option name="project" value="LOCAL" />
       <updated>1753702447984</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Kitap ödünç alma işlemleri için Loan ekledim.member için CRUD işlemlerini tamamladım">
+      <option name="closed" value="true" />
+      <created>1753703563540</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1753703563540</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Kitap ödünç alma işlemleri için Loan ekledim.member için CRUD işlemlerini tamamladım">
+      <option name="closed" value="true" />
+      <created>1753703623618</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1753703623618</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
