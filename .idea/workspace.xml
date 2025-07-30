@@ -4,12 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5479ecd-de23-42a4-9801-66a780cf59f4" name="Changes" comment="LOAN sistemini tamamladım &#10;kitap ödünç alma&#10;kitap iade etme&#10; tüm ödnçleri getirme&#10; üyeye ait aktif ödünçler">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/config/Swagger.java" afterDir="false" />
+    <list default="true" id="e5479ecd-de23-42a4-9801-66a780cf59f4" name="Changes" comment="Swagger eklendi">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/dto/LoanMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/EmailService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/LibraryManagementSystemApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/LibraryManagementSystemApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/config/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/config/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/controller/LoanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/controller/LoanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/dto/LoanRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/dto/LoanRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/dto/LoanResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/dto/LoanResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/model/Loan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/model/Loan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/model/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/model/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/repository/LoanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/repository/LoanRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/repository/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/LoanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/LoanService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/impl/LoanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/impl/LoanServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/LibraryManagementSystemApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/LibraryManagementSystemApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/config/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/config/DataLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/controller/LoanController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/controller/LoanController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/dto/LoanRequest$LoanRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/dto/LoanRequest$LoanRequestBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/dto/LoanRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/dto/LoanRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/dto/LoanResponse$LoanResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/dto/LoanResponse$LoanResponseBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/dto/LoanResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/dto/LoanResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/model/Loan$LoanBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/model/Loan$LoanBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/model/Loan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/model/Loan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/repository/LoanRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/repository/LoanRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/repository/MemberRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/repository/MemberRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/service/LoanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/service/LoanService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library_management_system/service/impl/LoanServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library_management_system/service/impl/LoanServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +85,6 @@
     </layout>
   </component>
   <component name="ProblemsViewState">
-    <option name="autoscrollToSource" value="true" />
     <hideBySeverity>
       <option value="300" />
     </hideBySeverity>
@@ -177,11 +201,7 @@
       <workItem from="1753656647802" duration="696000" />
       <workItem from="1753657368236" duration="2319000" />
       <workItem from="1753697309580" duration="1124000" />
-      <workItem from="1753700958375" duration="9165000" />
-      <workItem from="1753772950697" duration="4423000" />
-      <workItem from="1753777656952" duration="3923000" />
-      <workItem from="1753781703190" duration="13310000" />
-      <workItem from="1753880078053" duration="1873000" />
+      <workItem from="1753700958375" duration="1702000" />
     </task>
     <task id="LOCAL-00001" summary="güncellendi">
       <option name="closed" value="true" />
@@ -287,39 +307,7 @@
       <option name="project" value="LOCAL" />
       <updated>1753702447984</updated>
     </task>
-    <task id="LOCAL-00014" summary="Kitap ödünç alma işlemleri için Loan ekledim.member için CRUD işlemlerini tamamladım">
-      <option name="closed" value="true" />
-      <created>1753703563540</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1753703563540</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Kitap ödünç alma işlemleri için Loan ekledim.member için CRUD işlemlerini tamamladım">
-      <option name="closed" value="true" />
-      <created>1753703623618</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1753703623618</updated>
-    </task>
-    <task id="LOCAL-00016" summary="LOAN sistemini tamamladım &#10;kitap ödünç alma&#10;kitap iade etme&#10; tüm ödnçleri getirme&#10; üyeye ait aktif ödünçler">
-      <option name="closed" value="true" />
-      <created>1753877168706</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1753877168706</updated>
-    </task>
-    <task id="LOCAL-00017" summary="LOAN sistemini tamamladım &#10;kitap ödünç alma&#10;kitap iade etme&#10; tüm ödnçleri getirme&#10; üyeye ait aktif ödünçler">
-      <option name="closed" value="true" />
-      <created>1753877274640</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1753877274640</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,8 +338,7 @@
     <MESSAGE value="isme göre kitap aratma ekledim, kitap adlandırmasında hata vardı onu güncelledim" />
     <MESSAGE value="MESSAGE VE STATUS EKLENDİ" />
     <MESSAGE value="Kitap ödünç alma işlemleri için Loan ekledim.member için CRUD işlemlerini tamamladım" />
-    <MESSAGE value="LOAN sistemini tamamladım &#10;kitap ödünç alma&#10;kitap iade etme&#10; tüm ödnçleri getirme&#10; üyeye ait aktif ödünçler" />
-    <option name="LAST_COMMIT_MESSAGE" value="LOAN sistemini tamamladım &#10;kitap ödünç alma&#10;kitap iade etme&#10; tüm ödnçleri getirme&#10; üyeye ait aktif ödünçler" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kitap ödünç alma işlemleri için Loan ekledim.member için CRUD işlemlerini tamamladım" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -8,17 +8,20 @@ import com.example.library_management_system.repository.BookRepository;
 import com.example.library_management_system.repository.LoanRepository;
 import com.example.library_management_system.repository.MemberRepository;
 import com.example.library_management_system.service.LoanService;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.stream.Collectors;
+import com.example.library_management_system.service.EmailService;
 
 @Service
-public class LoanServiceImpl implements LoanService {
+public  class LoanServiceImpl implements LoanService {
+    // yeni ekledim
+
+    @Autowired
+    private EmailService emailService;
 
     @Autowired
     private LoanRepository loanRepository;
@@ -31,10 +34,53 @@ public class LoanServiceImpl implements LoanService {
 
 
     // silmeyi unutma !!!!!!!
-
     @Override
     public void deleteAllLoans() {
         loanRepository.deleteAll();
+    }
+    @Override
+    public List<LoanResponse> getOverdueLoans() {
+        LocalDate today = LocalDate.now();
+        List<Loan> overdueLoans = loanRepository.findByExpectedReturnDateBeforeAndActualReturnDateIsNull(today);
+
+        return overdueLoans.stream()
+                .map(loan -> LoanResponse.builder()
+                        .loanId(loan.getId())
+                        .bookName(loan.getBook().getBookName())
+                        .memberName(loan.getMember().getMemberName())
+                        .memberSurname(loan.getMember().getMemberSurname())
+                        .loanDate(loan.getLoanDate())
+                        .returnDate(loan.getExpectedReturnDate())
+                        .returned(loan.getReturned() != null ? loan.getReturned() : false)
+                        // Eğer gecikme durumu hesaplanacaksa aşağıdaki gibi hesaplayabilirsiniz
+                        .delayed(today.isAfter(loan.getExpectedReturnDate()))
+                        .delayMessage(today.isAfter(loan.getExpectedReturnDate()) ?
+                                "Kitap gecikti!" : "")
+                        .build())
+                .toList();
+    }
+
+
+    @Override
+    public void notifyLateLoans() {
+        List<Loan> activeLoans = loanRepository.findByActualReturnDateIsNull();
+
+        for (Loan loan : activeLoans) {
+            LocalDate expectedReturn = loan.getExpectedReturnDate();
+            if (expectedReturn != null && LocalDate.now().isAfter(expectedReturn)) {
+                Member member = loan.getMember();
+
+                String email = member.getMemberEmail();
+                String subject = "Kitap İade Gecikmesi Hakkında";
+                String message = "Merhaba " + member.getMemberName() + ",\n\n"
+                        + "Ödünç aldığınız \"" + loan.getBook().getBookName() + "\" kitabının iade süresi "
+                        + expectedReturn + " tarihinde dolmuştur.\n"
+                        + "Lütfen kitabı en kısa sürede iade ediniz.\n\n"
+                        + "Teşekkürler.";
+
+                emailService.sendSimpleMessage(email, subject, message);
+            }
+        }
     }
 
 

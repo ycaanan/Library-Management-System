@@ -15,14 +15,13 @@ public class LoanResponse {
     private Long memberId;
     private String memberName;
     private String memberSurname;
-
+    private String infoMessage;
     private Long bookId;
     private String bookName;
-
+    private boolean returned;
     private LocalDate loanDate;
     private LocalDate returnDate; //iade tarihi
-    private Boolean returned;
     private boolean delayed;
     private String delayMessage;
-    private String infoMessage;  // ödünç alınan kitap
+
 }

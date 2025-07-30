@@ -27,10 +27,12 @@ public class Loan {
 
 
     private LocalDate loanDate;
-
     private LocalDate expectedReturnDate;
-
     private LocalDate actualReturnDate;
-
+    private LocalDate returnDate;
     private Boolean returned;
+    public boolean isReturned() {
+        return returned;
+    }
+
 }

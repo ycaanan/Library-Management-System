@@ -8,10 +8,10 @@ import java.util.List;
 public interface LoanService {
 
     LoanResponse takeBook(Long memberId, Long bookId );
-
     LoanResponse returnBook(Long memberId, Long bookId);
-
+    List<LoanResponse> getOverdueLoans();
     List<LoanResponse> getActiveLoans();
     void deleteAllLoans();
     List<LoanResponse> getActiveLoansByMember(Long memberId);
+    void notifyLateLoans();
 }

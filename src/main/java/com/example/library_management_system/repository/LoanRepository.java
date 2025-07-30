@@ -3,7 +3,7 @@ package com.example.library_management_system.repository;
 import com.example.library_management_system.model.Loan;
 import com.example.library_management_system.model.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
-
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -20,4 +20,7 @@ public interface LoanRepository extends JpaRepository<Loan, Long> {
 
     // Silme işlemi öncesi, kitap halen aktif ödünçte mi diye kontrol için
     boolean existsByBookAndActualReturnDateIsNull(Book book);
+    List<Loan> findByActualReturnDateIsNullAndExpectedReturnDateBefore(LocalDate date);
+    List<Loan> findByExpectedReturnDateBeforeAndActualReturnDateIsNull(LocalDate date);
+
 }

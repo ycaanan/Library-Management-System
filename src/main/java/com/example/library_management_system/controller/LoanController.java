@@ -4,6 +4,7 @@ import com.example.library_management_system.service.LoanService;
 import com.example.library_management_system.dto.LoanResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import com.example.library_management_system.dto.LoanRequest;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -21,22 +22,16 @@ public class LoanController {
 
     // Kitap ödünç alma
     @PostMapping("/takebook")
-    public ResponseEntity<LoanResponse> takeBook(@RequestBody Map<String, String> request) {
-        Long memberId = Long.valueOf(request.get("memberId"));
-        Long bookId = Long.valueOf(request.get("bookId"));
-
-        LoanResponse response = loanService.takeBook(memberId, bookId);
+    public ResponseEntity<LoanResponse> takeBook(@RequestBody LoanRequest request) {
+        LoanResponse response = loanService.takeBook(request.getMemberId(), request.getBookId());
         return ResponseEntity.ok(response);
     }
 
 
     // Kitap iade etme
     @PostMapping("/returnBook")
-    public ResponseEntity<LoanResponse> returnBook(@RequestBody Map<String, String> request) {
-        Long memberId = Long.valueOf(request.get("memberId"));
-        Long bookId = Long.valueOf(request.get("bookId"));
-
-        LoanResponse response = loanService.returnBook(memberId, bookId);
+    public ResponseEntity<LoanResponse> returnBook(@RequestBody LoanRequest request) {
+        LoanResponse response = loanService.returnBook(request.getMemberId(), request.getBookId());
         return ResponseEntity.ok(response);
     }
 
@@ -58,4 +53,23 @@ public class LoanController {
         loanService.deleteAllLoans();
         return ResponseEntity.ok("Tüm ödünç kayıtları silindi.");
     }
+
+    @PostMapping("/notifyLateLoans")
+    public ResponseEntity<String> notifyLateLoans() {
+        loanService.notifyLateLoans();
+        return ResponseEntity.ok("Geciken kitaplar için e-mail gönderildi.");
+    }
+    // geç kalan kitapları listeleme
+    @GetMapping("/overdue")
+    public ResponseEntity<List<LoanResponse>> getOverdueLoans() {
+        List<LoanResponse> overdueLoans = loanService.getOverdueLoans();
+        return ResponseEntity.ok(overdueLoans);
+    }
+
+
+
+
+
+
+
 }
