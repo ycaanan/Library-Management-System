@@ -17,14 +17,20 @@ public class Loan {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
-    private Member member;
-
-    @ManyToOne
+    @ManyToOne(optional = true)
+    @JoinColumn(name = "book_id")
     private Book book;
 
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "member_id", nullable = false)
+    private Member member;
+
+
     private LocalDate loanDate;
-    private LocalDate returnDate;
+
+    private LocalDate expectedReturnDate;
+
+    private LocalDate actualReturnDate;
 
     private Boolean returned;
 }

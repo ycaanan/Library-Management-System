@@ -19,16 +19,35 @@ public class MemberController {
         this.memberRepository = memberRepository;
     }
 
+    // Üye ekle
     @PostMapping("/create")
-    public Member addMember(@RequestBody Member member) {
-        return memberRepository.save(member);
+    public ResponseEntity<Member> addMember(@RequestBody Member member) {
+        Member savedMember = memberRepository.save(member);
+        return ResponseEntity.ok(savedMember);
     }
 
+    // Tüm üyeleri listele
     @GetMapping("/all")
-    public List<Member> getAllMembers() {
-        return memberRepository.findAll();
+    public ResponseEntity<List<Member>> getAllMembers() {
+        List<Member> members = memberRepository.findAll();
+        return ResponseEntity.ok(members);
     }
 
+    // Üye güncelle
+    @PutMapping("/update/{id}")
+    public ResponseEntity<String> updateMember(@PathVariable Long id, @RequestBody Member newMemberData) {
+        return memberRepository.findById(id)
+                .map(member -> {
+                    member.setMemberName(newMemberData.getMemberName());
+                    member.setMemberSurname(newMemberData.getMemberSurname());
+                    member.setMemberEmail(newMemberData.getMemberEmail());
+                    memberRepository.save(member);
+                    return ResponseEntity.ok("Üye başarıyla güncellendi.");
+                })
+                .orElse(ResponseEntity.status(404).body("Üye bulunamadı veya silinmiş."));
+    }
+
+    // Üye sil
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<String> deleteMember(@PathVariable Long id) {
         return memberRepository.findById(id)
@@ -38,21 +57,4 @@ public class MemberController {
                 })
                 .orElse(ResponseEntity.status(404).body("Üye bulunamadı: " + id));
     }
-
-    @PutMapping("/update/{id}")
-    public ResponseEntity<Member> updateMember(@PathVariable Long id, @RequestBody Member newMemberData) {
-        return memberRepository.findById(id)
-                .map(member -> {
-                    member.setMembername(newMemberData.getMembername());
-                    member.setMembersurname(newMemberData.getMembersurname());
-                    member.setMemberemail(newMemberData.getMemberemail());
-                    memberRepository.save(member);
-                    return ResponseEntity.ok(member);
-                })
-                .orElse(ResponseEntity.status(404).body(null));
-    }
-
-
-
-
 }

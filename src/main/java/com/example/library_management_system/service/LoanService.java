@@ -1,10 +1,17 @@
 package com.example.library_management_system.service;
 
-import com.example.library_management_system.model.Loan;  // Loan modelini import et
+import com.example.library_management_system.dto.LoanResponse;
+
+import java.time.LocalDate;
 import java.util.List;
 
 public interface LoanService {
-    Loan loanBook(Long memberId, Long bookId);
-    Loan returnBook(Long loanId);
-    List<Loan> getAllLoans();
+
+    LoanResponse takeBook(Long memberId, Long bookId );
+
+    LoanResponse returnBook(Long memberId, Long bookId);
+
+    List<LoanResponse> getActiveLoans();
+    void deleteAllLoans();
+    List<LoanResponse> getActiveLoansByMember(Long memberId);
 }
