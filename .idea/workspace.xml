@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5479ecd-de23-42a4-9801-66a780cf59f4" name="Changes" comment="E-mail gönderme endopointi yaptım">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/config/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/config/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/model/Loan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/model/Loan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/repository/LoanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/repository/LoanRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +175,7 @@
       <workItem from="1753697309580" duration="1124000" />
       <workItem from="1753700958375" duration="1702000" />
       <workItem from="1753956594667" duration="9367000" />
-      <workItem from="1754396555418" duration="602000" />
+      <workItem from="1754396555418" duration="1768000" />
     </task>
     <task id="LOCAL-00001" summary="güncellendi">
       <option name="closed" value="true" />
