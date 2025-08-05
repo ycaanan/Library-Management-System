@@ -21,8 +21,8 @@ public class Loan {
     @JoinColumn(name = "book_id")
     private Book book;
 
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "member_id", nullable = false)
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "member_id")
     private Member member;
 
 

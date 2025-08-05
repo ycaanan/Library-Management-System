@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e5479ecd-de23-42a4-9801-66a780cf59f4" name="Changes" comment="E-mail gönderme endopointi yaptım">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/config/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/config/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/model/Loan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/model/Loan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/repository/LoanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/library_management_system/repository/LoanRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/.idea/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Canan Yıldız &lt;ycaaanan@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ycaanan&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ycaanan/Library-Management-System.git&quot;,
+    &quot;accountId&quot;: &quot;a4353170-0e63-40ee-8979-0493191b9991&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/library_management_system/config/DataLoader.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/library_management_system/controller/BookController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/library_management_system/model/Book.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/library_management_system/model/Member.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/library_management_system/model/Process.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/BookService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/library_management_system/service/impl/BookServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
+  <component name="ProblemsViewState">
+    <hideBySeverity>
+      <option value="300" />
+    </hideBySeverity>
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2zg11jL9rBpD6Jw4YFZtyq3WC2x" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Maven.library-management-system [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.library-management-system [install].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-DataSourceUtil.generic.notification&quot;: &quot;postgres@localhost&quot;,
+    &quot;Notification.DoNotAsk-DataSourceUtil.generic.notification&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.LibraryManagementSystemApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/caana/OneDrive/Masaüstü/Library-Management-System&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Properties&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\caana\OneDrive\Masaüstü\Library-Management-System\src\main\java\com\example\library_management_system" />
+      <recent name="C:\Users\caana\OneDrive\Masaüstü\Library-Management-System\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.library_management_system.service" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="LibraryManagementSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Library-Management-System" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.library_management_system.LibraryManagementSystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e5479ecd-de23-42a4-9801-66a780cf59f4" name="Changes" comment="" />
+      <created>1752137688191</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752137688191</updated>
+      <workItem from="1752137689528" duration="11285000" />
+      <workItem from="1752235041621" duration="1765000" />
+      <workItem from="1752479128928" duration="13079000" />
+      <workItem from="1752493548467" duration="831000" />
+      <workItem from="1752494399325" duration="803000" />
+      <workItem from="1752495220671" duration="497000" />
+      <workItem from="1752495737751" duration="1300000" />
+      <workItem from="1752497057640" duration="305000" />
+      <workItem from="1752498140583" duration="1553000" />
+      <workItem from="1752499719209" duration="1244000" />
+      <workItem from="1752580889485" duration="410000" />
+      <workItem from="1752581522073" duration="3783000" />
+      <workItem from="1752618599156" duration="572000" />
+      <workItem from="1752664477378" duration="4637000" />
+      <workItem from="1752711137862" duration="280000" />
+      <workItem from="1752743322983" duration="2325000" />
+      <workItem from="1752754748523" duration="635000" />
+      <workItem from="1752769688240" duration="8309000" />
+      <workItem from="1753092382536" duration="14237000" />
+      <workItem from="1753265245306" duration="9555000" />
+      <workItem from="1753350587235" duration="11914000" />
+      <workItem from="1753439218765" duration="9324000" />
+      <workItem from="1753458593619" duration="11000" />
+      <workItem from="1753459385315" duration="3469000" />
+      <workItem from="1753470620033" duration="648000" />
+      <workItem from="1753656647802" duration="696000" />
+      <workItem from="1753657368236" duration="2319000" />
+      <workItem from="1753697309580" duration="1124000" />
+      <workItem from="1753700958375" duration="1702000" />
+      <workItem from="1753956594667" duration="9367000" />
+      <workItem from="1754396555418" duration="602000" />
+    </task>
+    <task id="LOCAL-00001" summary="güncellendi">
+      <option name="closed" value="true" />
+      <created>1752492832166</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752492832166</updated>
+    </task>
+    <task id="LOCAL-00002" summary="güncellendi">
+      <option name="closed" value="true" />
+      <created>1752494225832</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1752494225832</updated>
+    </task>
+    <task id="LOCAL-00003" summary="güncellendi">
+      <option name="closed" value="true" />
+      <created>1752495911086</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752495911086</updated>
+    </task>
+    <task id="LOCAL-00004" summary="güncellendi">
+      <option name="closed" value="true" />
+      <created>1752584031078</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1752584031078</updated>
+    </task>
+    <task id="LOCAL-00005" summary="güncellendi">
+      <option name="closed" value="true" />
+      <created>1752584043317</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1752584043317</updated>
+    </task>
+    <task id="LOCAL-00006" summary="config paketi oluşturup kitap  db ye kitap ekledim, service katmanı kodladım.">
+      <option name="closed" value="true" />
+      <created>1753099521421</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1753099521421</updated>
+    </task>
+    <task id="LOCAL-00007" summary="config paketi oluşturup kitap  db ye kitap ekledim, service katmanı kodladım.">
+      <option name="closed" value="true" />
+      <created>1753102473087</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1753102473087</updated>
+    </task>
+    <task id="LOCAL-00008" summary="creatre işlemini tamamladım">
+      <option name="closed" value="true" />
+      <created>1753268629899</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1753268629899</updated>
+    </task>
+    <task id="LOCAL-00009" summary="creatre işlemini tamamladım">
+      <option name="closed" value="true" />
+      <created>1753269023556</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1753269023556</updated>
+    </task>
+    <task id="LOCAL-00010" summary="isme göre kitap aratma ekledim, kitap adlandırmasında hata vardı onu güncelledim">
+      <option name="closed" value="true" />
+      <created>1753361153844</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1753361153844</updated>
+    </task>
+    <task id="LOCAL-00011" summary="isme göre kitap aratma ekledim, kitap adlandırmasında hata vardı onu güncelledim">
+      <option name="closed" value="true" />
+      <created>1753453623636</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1753453623636</updated>
+    </task>
+    <task id="LOCAL-00012" summary="MESSAGE VE STATUS EKLENDİ">
+      <option name="closed" value="true" />
+      <created>1753462995602</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1753462995602</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Kitap ödünç alma işlemleri için Loan ekledim.member için CRUD işlemlerini tamamladım">
+      <option name="closed" value="true" />
+      <created>1753702447984</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1753702447984</updated>
+    </task>
+    <task id="LOCAL-00014" summary="E-mail gönderme endopointi yaptım">
+      <option name="closed" value="true" />
+      <created>1753956690779</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1753956690779</updated>
+    </task>
+    <task id="LOCAL-00015" summary="E-mail gönderme endopointi yaptım">
+      <option name="closed" value="true" />
+      <created>1753956710168</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1753956710168</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="güncellendi" />
+    <MESSAGE value="config paketi oluşturup kitap  db ye kitap ekledim, service katmanı kodladım." />
+    <MESSAGE value="creatre işlemini tamamladım" />
+    <MESSAGE value="message ve status eklendi" />
+    <MESSAGE value="isme göre kitap aratma ekledim, kitap adlandırmasında hata vardı onu güncelledim" />
+    <MESSAGE value="MESSAGE VE STATUS EKLENDİ" />
+    <MESSAGE value="Kitap ödünç alma işlemleri için Loan ekledim.member için CRUD işlemlerini tamamladım" />
+    <MESSAGE value="Swagger eklendi" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <MESSAGE value="E-mail gönderme endopointi yaptım" />
+    <option name="LAST_COMMIT_MESSAGE" value="E-mail gönderme endopointi yaptım" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

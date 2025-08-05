@@ -20,7 +20,7 @@ public interface LoanRepository extends JpaRepository<Loan, Long> {
 
     // Silme işlemi öncesi, kitap halen aktif ödünçte mi diye kontrol için
     boolean existsByBookAndActualReturnDateIsNull(Book book);
-    List<Loan> findByActualReturnDateIsNullAndExpectedReturnDateBefore(LocalDate date);
+
     List<Loan> findByExpectedReturnDateBeforeAndActualReturnDateIsNull(LocalDate date);
 
 }

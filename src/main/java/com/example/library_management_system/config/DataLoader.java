@@ -32,7 +32,7 @@ public class DataLoader {
 
             // Üye ekle
             if (loanRepository.count() == 0) {
-                Book sefiller = new Book("Sefiller", "Victor Hugo", "Roman");
+                Book sefiller = new Book("Gel DÜnyayı Keşfedelim","İlber Ortaylı", "Roman");
                 sefiller.setAvailable(false);
                 bookRepository.save(sefiller);
 
@@ -47,6 +47,7 @@ public class DataLoader {
                         .book(sefiller)
                         .loanDate(LocalDate.now().minusDays(30))
                         .expectedReturnDate(LocalDate.now().minusDays(15))
+                        .actualReturnDate(null)
                         .returned(false)
                         .build();
 
