@@ -80,5 +80,4 @@ public class BookController {
         }
     }
 
-    // Kitap ödünç alma/verme gibi işlemler servis katmanında yapılmalı
 }

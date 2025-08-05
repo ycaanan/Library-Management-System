@@ -26,4 +26,3 @@ public class Process {
    @JoinColumn(name = "member_id")
    private Member member;
 }
-// alma ve geri verme tarihi ekle

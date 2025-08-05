@@ -17,17 +17,8 @@ public class LoanMapper {
         if (!loan.isReturned() && loan.getReturnDate().isBefore(LocalDate.now())) {
             response.setInfoMessage("Kitap gecikti");
         } else {
-            response.setInfoMessage(null); // veya ""
+            response.setInfoMessage(null);
         }
-
-
-
-
-
-
-
-
-
         return response;
     }
 

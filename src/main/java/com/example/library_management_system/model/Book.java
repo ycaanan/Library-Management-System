@@ -25,6 +25,6 @@ public class Book {
         this.bookName = bookName;
         this.bookAuthor = bookAuthor;
         this.genre = genre;
-        this.available = true; // Constructor'da da ayarla
+        this.available = true;
     }
 }
